@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>FEM | Interactive rating component</title>
+
+</head>
+
+<body>
+  <main>
+    <section class="feedback-section">
+
+      <div class="rating-card">
+        <div class="input-feedback">
+          <img class="star-icon" src="images/icon-star.svg" alt="star icon">
+          <h2 class="feedback-heading">How did we do?</h2>
+          <p class="support-feedback-message">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+          <div class="ratings-group">
+            <button class="btn rating-btn">1</button>
+            <button class="btn rating-btn">2</button>
+            <button class="btn rating-btn">3</button>
+            <button class="btn rating-btn">4</button>
+            <button class="btn rating-btn">5</button>
+          </div>
+          <button class="btn submit-btn" type="button">SUBMIT</button>
+        </div>
+        
+        <div class="output-feedback invisible">
+          <img src="images/illustration-thank-you.svg" alt="">
+          <p class="selection-feedback"></p>
+          <h2 class="feedback-heading">Thank you!</h2>
+          <p class="support-feedback-message">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>

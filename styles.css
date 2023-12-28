@@ -1,0 +1,146 @@
+:root {
+    --background-color: #141518;
+    --primary-color: #19202A;
+    --rating-color: #262F37;
+    --accent-color: #FC7615;
+    --text-color: #5A606C;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feedback-section {
+    background-color: var(--background-color);
+    min-height: 100vh;
+    min-height: 100svh;
+    display: grid;
+    place-content: center;
+    padding: 2rem;
+}
+
+.rating-card {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 25px;
+    max-width: 400px;
+}
+
+.star-icon {
+    background-color: var(--rating-color);
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feedback-heading {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.support-feedback-message {
+    color: #fff;
+    opacity: 65%;
+    font-size: 14px;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.ratings-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.rating-btn {
+    background-color: var(--rating-color);
+    color: #fff;
+    opacity: 80%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1;
+}
+
+.btn-round:hover {
+    background-color: var(--accent-color);
+    opacity: 100%;
+}
+
+.btn-round:active {
+    background-color: var(--accent-color);
+    opacity: 100%;
+}
+
+.submit-btn {
+    background-color: var(--accent-color);
+    color: #fff;
+    width: 100%;
+    border-radius: 30px;
+    height: 2.75rem;
+    letter-spacing: 3px;
+}
+
+.submit-btn:hover {
+    background-color: #fff;
+    color: var(--accent-color);
+}
+
+.output-feedback {
+    text-align: center;
+}
+
+.output-feedback > img {
+    margin: 1rem 0 1.5rem;
+}
+
+.selection-feedback {
+    display: inline-block;
+    background-color: var(--rating-color);
+    color: var(--accent-color);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.active-rating-button {
+    background-color: var(--accent-color);
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+@media only screen and (max-width:450px) {
+
+    .feedback-section {
+        padding: 1rem;
+    }
+
+    .rating-card {
+        padding: 1rem;
+        max-width: 300px;
+    }
+
+    .rating-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+}
